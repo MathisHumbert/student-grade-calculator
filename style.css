@@ -1,0 +1,80 @@
+/* global style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: coral;
+}
+.hero {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  background: #313639;
+  padding: 2rem;
+  border-radius: 10px;
+  display: grid;
+  gap: 2rem;
+}
+.sub-container {
+  display: grid;
+  gap: 2rem;
+}
+
+/* title */
+h1 {
+  font-size: 2rem;
+  color: coral;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* inputs */
+.grades {
+  display: flex;
+  flex-flow: column;
+}
+.grade-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fdfdfd44;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #fdfdfd;
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+.grade-input::placeholder {
+  color: #fdfdfd;
+}
+.grade-input.hide::placeholder {
+  display: none;
+}
+.submit-input {
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  margin-top: 1rem;
+  color: coral;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s linear;
+}
+.submit-input:hover {
+  border-color: coral;
+}
+
+/* show-text */
+.show-text {
+  /* z-index: -1; */
+  font-size: 18px;
+  color: #fdfdfd;
+  text-align: center;
+}
